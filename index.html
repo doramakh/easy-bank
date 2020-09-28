@@ -3,21 +3,49 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Frontend Mentor | Easybank landing page</title>
+  <title>Easybank landing page</title>
   <link rel="stylesheet" href="css/normalize.css">
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 
 
-  Home
-  About
-  Contact
-  Blog
-  Careers
+  <nav class="sitenav sitenav--nojs">
+    <div class="container sitenav__container">
+      <div class="sitenav__controller">
+        <a class="sitenav__logo-link" href="index.html">
+          <img class="sitenav__logo" src="img/logo.svg" alt="Logo of easy bank" width="139" height="20">
+        </a>
 
-  Request Invite
+        <button class="sitenav__toggler" type="button">
+          <span class="sitenav__toggler-span"></span>
+        </button>
+      </div>
 
+      <div class="sitenav__list-wrapper">
+        <ul class="sitenav__list">
+          <li class="sitenav__item">
+            <a class="sitenav__link" href="#">Home</a>
+          </li>
+          <li class="sitenav__item">
+            <a class="sitenav__link" href="#">About</a>
+          </li>
+          <li class="sitenav__item">
+            <a class="sitenav__link" href="#">Contact</a>
+          </li>
+          <li class="sitenav__item">
+            <a class="sitenav__link" href="#">Blog</a>
+          </li>
+          <li class="sitenav__item">
+            <a class="sitenav__link" href="#">Careers</a>
+          </li>
+        </ul>
+      </div>
+
+      <a class="button sitenav__button" href="#">Request invite</a>
+    </div>
+  </nav>
 
 
   Next generation digital banking
@@ -86,7 +114,18 @@
   Request Invite
 
   © Easybank. All Rights Reserved
+
+  <script>
+    var elSiteHeader = document.querySelector('.sitenav');
+    var elSiteHeaderToggler = document.querySelector('.sitenav__toggler');
+
+    elSiteHeader.classList.remove('sitenav--nojs');
+
+    elSiteHeaderToggler.addEventListener('click', function () {
+      elSiteHeader.classList.toggle('sitenav--open');
+    });
+  </script>
   
-  <script src="js/main.js"></script>
+
 </body>
 </html>

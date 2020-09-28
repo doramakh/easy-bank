@@ -1,0 +1,31 @@
+.button{
+  display: block;
+  min-width: 163px;
+  max-width: 163px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 22px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 28px;
+  color: #fff;
+  background-image: $bg-linear;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-decoration: none;
+  text-align: center;
+  text-transform: capitalize;
+  
+  &:hover{
+    opacity: 0.8;
+  }
+  
+  &:active{
+    opacity: 0.4;
+  }
+  
+  @media screen and (max-width: 800px) {
+    display: none;
+  }
+}

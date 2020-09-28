@@ -1,0 +1,44 @@
+.sitenav__controller{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 22px 0;
+
+  @media screen and (max-width: 550px) {
+    width: 100%;
+  }
+}
+
+.sitenav__logo-link{
+  display: inline-block;
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+.sitenav__logo{
+  display: block;
+  width: 139px;
+  height: 20px;
+}
+
+.sitenav__toggler{
+  display: none;
+  padding: 0;
+  background: none;
+  border: none;
+  outline: 0;
+
+  @media screen and (max-width: 550px) {
+    display: block;
+  }
+}
+
+.sitenav__toggler-span{
+  display: flex;
+  width: 24px;
+  height: 12px;
+  background-image: url(../img/menu-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
