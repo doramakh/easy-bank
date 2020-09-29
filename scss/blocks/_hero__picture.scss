@@ -1,0 +1,42 @@
+.hero__picture{
+  position: absolute;
+  top: 0;
+  right: 0;
+  
+  @media screen and (max-width: 650px){
+    position: static;
+    display: flex;
+    width: 100%;
+  }
+}
+
+.hero__img{
+  width: 820px;
+  height: 908px;
+  object-fit: cover;
+  
+  @media screen and (max-width: 1290px) {
+    width: 600px;
+    height: 664px;
+  }
+  
+  @media screen and (max-width: 1030px) {
+    width: 500px;
+    height: 554px;
+  }
+  
+  @media screen and (max-width: 885px) {
+    width: 300px;
+    height: 332px;
+  }
+  
+  @media screen and (max-width: 650px){
+    width: 600px;
+    height: 420px;
+  }
+  
+  @media screen and (max-width: 500px){
+    width: 500px;
+    height: 280px;
+  }
+}

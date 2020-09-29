@@ -24,7 +24,7 @@ body {
   margin: 0;
   margin-top: 80px;
   overflow-x: hidden;
-  font-family: "Arial", sans-serif;
+  font-family: "Public Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 28px;
   font-style: normal;
@@ -68,8 +68,37 @@ main {
   overflow: hidden;
 }
 
+.button {
+  display: block;
+  min-width: 163px;
+  max-width: 163px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 22px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 28px;
+  color: #fff;
+  background-image: linear-gradient(135deg, #33D35E 0%, #2AB6D9 99.58%);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-decoration: none;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+.button:active {
+  opacity: 0.4;
+}
+
 .sitenav {
   position: fixed;
+  z-index: 50;
   top: 0;
   left: 0;
   width: 100%;
@@ -196,36 +225,8 @@ main {
   opacity: 0.5;
 }
 
-.button {
-  display: block;
-  min-width: 163px;
-  max-width: 163px;
-  padding: 8px 16px;
-  border: none;
-  border-radius: 22px;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 28px;
-  color: #fff;
-  background-image: linear-gradient(135deg, #33D35E 0%, #2AB6D9 99.58%);
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  text-decoration: none;
-  text-align: center;
-  text-transform: capitalize;
-}
-
-.button:hover {
-  opacity: 0.8;
-}
-
-.button:active {
-  opacity: 0.4;
-}
-
 @media screen and (max-width: 800px) {
-  .button {
+  .sitenav__button {
     display: none;
   }
 }
@@ -288,5 +289,180 @@ main {
 
 .sitenav--open .sitenav__link:hover {
   color: #9597A5;
+}
+
+.hero {
+  position: relative;
+  background-color: #fff;
+  padding: 170px 0;
+}
+
+@media screen and (max-width: 1290px) {
+  .hero {
+    padding: 120px 0;
+  }
+}
+
+@media screen and (max-width: 885px) {
+  .hero {
+    padding: 30px 0;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .hero {
+    padding: 0;
+  }
+}
+
+.hero__info {
+  max-width: 450px;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 885px) {
+  .hero__info {
+    max-width: 400px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .hero__info {
+    max-width: 350px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .hero__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    max-width: 100%;
+  }
+}
+
+.hero__heading {
+  margin: 0;
+  margin-bottom: 24px;
+  font-weight: 100;
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: -1px;
+  color: #2D314D;
+}
+
+@media screen and (max-width: 1030px) {
+  .hero__heading {
+    font-size: 48px;
+    line-height: 1.5;
+  }
+}
+
+@media screen and (max-width: 885px) {
+  .hero__heading {
+    font-size: 36px;
+    margin-bottom: 16px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .hero__heading {
+    font-size: 40px;
+    line-height: 47px;
+  }
+}
+
+.hero__text {
+  margin-top: 0;
+  margin-bottom: 36px;
+  letter-spacing: -0.3px;
+}
+
+@media screen and (max-width: 1030px) {
+  .hero__text {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+@media screen and (max-width: 885px) {
+  .hero__text {
+    margin-bottom: 16px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .hero__text {
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: -0.2px;
+    margin-bottom: 32px;
+  }
+}
+
+.hero__picture {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+@media screen and (max-width: 650px) {
+  .hero__picture {
+    position: static;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+  }
+}
+
+.hero__img {
+  width: 820px;
+  height: 908px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media screen and (max-width: 1290px) {
+  .hero__img {
+    width: 600px;
+    height: 664px;
+  }
+}
+
+@media screen and (max-width: 1030px) {
+  .hero__img {
+    width: 500px;
+    height: 554px;
+  }
+}
+
+@media screen and (max-width: 885px) {
+  .hero__img {
+    width: 300px;
+    height: 332px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .hero__img {
+    width: 600px;
+    height: 420px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .hero__img {
+    width: 500px;
+    height: 280px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
