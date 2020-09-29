@@ -1,0 +1,16 @@
+.articles__container{
+  display: flex;
+  flex-direction: column;
+}
+
+.articles__heading{
+  margin-bottom: 40px;
+
+  @media screen and (max-width: 1150px){
+    text-align: center;
+  }
+
+  @media screen and (max-width: 900px){
+   margin-bottom: 30px;
+  }
+}
