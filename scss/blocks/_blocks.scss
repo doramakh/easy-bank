@@ -1,6 +1,7 @@
 @import "container";
 @import "visually-hidden";
 @import "button";
+@import "section-heading";
 @import "sitenav";
 @import "sitenav__container";
 @import "sitenav__controller";
@@ -10,3 +11,6 @@
 @import "hero";
 @import "hero__info";
 @import "hero__picture";
+@import "features";
+@import "features__container";
+@import "features__list";

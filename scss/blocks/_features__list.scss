@@ -1,0 +1,122 @@
+.features__list{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  margin-left: -15px;
+  margin-right: -15px;
+  list-style-type: none;
+  
+  @media screen and (max-width: 1150px){
+    justify-content: space-evenly;
+  }
+}
+
+.features__item{
+  display: flex;
+  flex-direction: column;
+  max-width: 255px;
+  margin-right: 15px;
+  margin-left: 15px;
+  margin-bottom: 30px;
+  
+  @media screen and (max-width: 1150px){
+    align-items: center;
+    max-width: 350px;
+    margin-bottom: 32px;
+  }
+  
+  @media screen and (max-width: 800px){
+    max-width: 250px;
+  }
+
+  @media screen and (max-width: 600px){
+    max-width: 400px;
+  }
+}
+
+.features__item--banking{
+  &::before{
+    display: block;
+    width: 72px;
+    height: 72px;
+    margin-bottom: 40px;
+    background-image: url("../img/icon-online.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    content: "";
+  }
+}
+
+.features__item--budgeting{
+  &::before{
+    display: block;
+    width: 72px;
+    height: 72px;
+    margin-bottom: 40px;
+    background-image: url("../img/icon-budgeting.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    content: "";
+  }
+}
+
+.features__item--onboarding{
+  &::before{
+    display: block;
+    width: 72px;
+    height: 72px;
+    margin-bottom: 40px;
+    background-image: url("../img/icon-onboarding.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    content: "";
+  }
+}
+
+.features__item--api{
+  &::before{
+    display: block;
+    width: 72px;
+    height: 72px;
+    margin-bottom: 40px;
+    background-image: url("../img/icon-api.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    content: "";
+  }
+}
+
+.features__item-heading{
+  margin-top: 0;
+  margin-bottom: 26px;
+  font-weight: 100;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -0.4;
+  color: #2D314D;
+  
+  @media screen and (max-width: 650px){
+    margin-bottom: 16px;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: -0.4;
+  }
+}
+
+.features__item-text{
+  margin: 0;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: -0.25px;
+  
+  @media screen and (max-width: 650px){
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: -0.2;
+  }
+}

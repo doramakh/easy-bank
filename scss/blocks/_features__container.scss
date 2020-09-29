@@ -1,0 +1,32 @@
+.features__container{
+  display: flex;
+  flex-direction: column;
+  
+  @media screen and (max-width: 1150px){
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.features__heading{
+  max-width: 635px;
+  margin-bottom: 16px;
+  
+  @media screen and (max-width: 650px){
+    max-width: 500px;
+  }
+}
+
+.features__text{
+  max-width: 635px;
+  margin: 0;
+  margin-bottom: 72px;
+  letter-spacing: -0.3;
+  
+  @media screen and (max-width: 650px){
+    max-width: 500px;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: -0.2;
+  }
+}

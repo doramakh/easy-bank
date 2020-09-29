@@ -1,0 +1,14 @@
+.section-heading{
+  margin: 0;
+  font-weight: 100;
+  font-size: 40px;
+  line-height: 64px;
+  letter-spacing: -0.7;
+  color: #2D314D;
+  
+  @media screen and (max-width: 650px){
+    font-size: 32px;
+    line-height: 38px;
+    letter-spacing: -0.6;
+  }
+}

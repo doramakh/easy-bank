@@ -1,0 +1,10 @@
+.features{
+  padding-top: 95px;
+  padding-bottom: 65px;
+  background-color: #F4F5F7;
+
+  @media screen and (max-width: 650px){
+    padding-top: 64px;
+    padding-bottom: 32px;
+  }
+}
