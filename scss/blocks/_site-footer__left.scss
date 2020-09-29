@@ -1,0 +1,32 @@
+.site-footer__left{
+  display: flex;
+  flex-direction: column;
+}
+
+.site-footer__logo-link{
+  display: block;
+  margin-bottom: 55px;
+  text-decoration: none;
+}
+
+.site-footer__logo{
+  display: block;
+  width: 139px;
+  height: 20px;
+}
+
+.site-footer__socials{
+  display: flex;
+  align-items: center;
+}
+
+.site-footer__social-link{
+  display: block;
+  margin-right: 13px;
+}
+
+.site-footer__social-img{
+  display: block;
+  width: 20px;
+  height: 20px;
+}

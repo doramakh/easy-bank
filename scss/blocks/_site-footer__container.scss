@@ -1,0 +1,9 @@
+.site-footer__container{
+  display: flex;
+  justify-content: space-between;
+
+  @media screen and (max-width: 650px){
+    flex-direction: column;
+    align-items: center;
+  }
+}

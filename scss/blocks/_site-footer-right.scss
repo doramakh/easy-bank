@@ -1,0 +1,22 @@
+.site-footer-right{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  @media screen and (max-width: 650px){
+    align-items: center;
+  }
+}
+
+.site-footer__button{
+  margin-bottom: 24px;
+}
+
+.site-footer__rights{
+  display: block;
+  font-size: 15px;
+  line-height: 26px;
+  letter-spacing: -0.2px;
+  color: #FFFFFF;
+  opacity: 0.5;
+}
